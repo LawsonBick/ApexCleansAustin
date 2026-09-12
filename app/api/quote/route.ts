@@ -1,5 +1,5 @@
 import {quoteSchema,deliverQuote} from '@/lib/quote';
-import {env} from 'cloudflare:workers';
+export const runtime='nodejs';
 const attempts=new Map<string,{count:number;until:number}>();
 export async function POST(req:Request){
  const reply=(body:object,status:number)=>Response.json(body,{status,headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex'}});
@@ -9,6 +9,6 @@ export async function POST(req:Request){
  let raw;try{raw=JSON.parse(text);}catch{return reply({ok:false,message:'Invalid request.'},400)}
  const parsed=quoteSchema.safeParse(raw);if(!parsed.success)return reply({ok:false,message:'Please check the highlighted fields.',errors:parsed.error.flatten().fieldErrors},422);
  const q=parsed.data;if(q.website||Date.now()-q.started<2000||q.started>Date.now())return reply({ok:false,message:'Please wait a moment and try again.'},400);
- const ip=req.headers.get('cf-connecting-ip')||'local';const now=Date.now();for(const[k,v]of attempts)if(v.until<now)attempts.delete(k);const a=attempts.get(ip)||{count:0,until:now+600000};if(a.count>=8)return reply({ok:false,message:'Too many attempts. Please try again later or call Apex.'},429);a.count++;attempts.set(ip,a);
- const vars=env as unknown as {RESEND_API_KEY?:string;QUOTE_FROM?:string};try{const result=await deliverQuote(q,{apiKey:vars.RESEND_API_KEY,from:vars.QUOTE_FROM});return reply(result,result.status);}catch{return reply({ok:false,message:'We could not confirm delivery. Please try again or call (512) 825-1484. Your details are still here.'},502)}
+ const ip=req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()||req.headers.get('x-real-ip')||'local';const now=Date.now();for(const[k,v]of attempts)if(v.until<now)attempts.delete(k);const a=attempts.get(ip)||{count:0,until:now+600000};if(a.count>=8)return reply({ok:false,message:'Too many attempts. Please try again later or call Apex.'},429);a.count++;attempts.set(ip,a);
+ try{const result=await deliverQuote(q,{apiKey:process.env.RESEND_API_KEY,from:process.env.QUOTE_FROM});return reply(result,result.status);}catch{return reply({ok:false,message:'We could not confirm delivery. Please try again or call (512) 825-1484. Your details are still here.'},502)}
 }
