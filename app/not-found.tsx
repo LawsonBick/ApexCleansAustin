@@ -1,0 +1,2 @@
+import {CTA} from '@/components/site';
+export default function NotFound(){return <main id="main" className="wrap page-hero"><p className="eyebrow">404 · Page not found</p><h1>Let’s get you<br/>a clearer direction.</h1><p>The page you’re looking for isn’t here. Explore our services or get in touch about your home.</p><div className="inline-links"><a className="text-link" href="/">Back to home</a><a className="text-link" href="/services">Explore services</a><CTA/></div></main>}
