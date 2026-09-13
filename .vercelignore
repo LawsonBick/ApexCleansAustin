@@ -1,0 +1,13 @@
+.env*
+!.env.example
+.git
+.next
+.vinext
+.wrangler
+.sites-runtime
+dist
+audit
+tests
+public/images/apex-storefront.png
+public/images/apex-google-business-cover.png
+public/images/hero-gallery-1-enhanced.png

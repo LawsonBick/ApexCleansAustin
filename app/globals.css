@@ -80,3 +80,5 @@ footer{background:#f3faff}
   .service:hover img,.work-grid figure:hover img,.gallery-full figure:hover img{transform:none}
 }
 @media(max-width:760px){.review-summary{margin-top:25px}.review-grid,.review-grid-full{grid-template-columns:1fr;gap:30px;margin-top:30px}.review-quote{min-height:0;padding-top:25px}.review-quote blockquote{margin-bottom:22px}.review-quote blockquote p{font-size:28px}.review-quote figcaption a{min-height:44px;font-size:14px}.reviews-bottom{display:block}.reviews-bottom .text-link{margin-top:18px;min-height:44px}.proof-strip a.google-rating{font-size:12px;min-height:36px}}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
