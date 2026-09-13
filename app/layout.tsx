@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { SiteMotion } from '@/components/site-motion';
 import { Header, Tracking } from '@/components/site-client';
@@ -10,4 +11,4 @@ export const metadata: Metadata = {
  robots:process.env.SITE_INDEXABLE==='true' && process.env.VERCEL_ENV!=='preview'?{index:true,follow:true}:{index:false,follow:false},
  icons:{icon:'/images/apex-window-cleaning-logo.png'},
 };
-export default function RootLayout({children}:{children:React.ReactNode}) {return <html lang="en"><body><a className="skip" href="#main">Skip to content</a><Header/>{children}<Footer/><Tracking/><SiteMotion/></body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}) {return <html lang="en"><body><a className="skip" href="#main">Skip to content</a><Header/>{children}<Footer/><Tracking/><SiteMotion/><Analytics/></body></html>}
