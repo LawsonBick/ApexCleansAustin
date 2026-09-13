@@ -73,3 +73,11 @@ GoDaddy sign-in; secure Resend production API key and verified sender; confirmat
 First post-change Lighthouse run: performance 73, LCP 5.9s, CLS 0, TBT 20ms; accessibility and best practices remain 100, SEO remains 69 while noindex is intentional. Image-delivery estimated waste fell from 794 KiB to 100 KiB, but this run did NOT establish a speed improvement. Render delay remains a performance concern; initial headline/description entry animations were removed while retaining other motion. Report raw measurements rather than claiming a Core Web Vitals pass.
 
 DNS work explicitly deferred by owner. Do not change DNS during this audit. Email configuration and production indexing remain launch requirements.
+
+## Final measured result
+
+Final production lab run after removing initial heading/description animations: performance **97**, accessibility **100**, best practices **100**, SEO **69**, LCP **2.4s**, CLS **0**, TBT **110ms**. Compared with initial 83 / 4.5s / 0 / 10ms, performance and LCP improved in this final run; TBT increased and all results remain subject to lab variability. Preserve the intermediate 73-point run as evidence of variability. These are not real-user p75 results or a proven INP pass.
+
+Sitemap cross-check: 38 URLs, zero Arizona URLs. HTML crawl: 38 pages, no duplicate titles, no missing canonicals. Legacy redirect samples return 308; unknown root/service paths return 404. Final code commit: 7f401d4. Verified deployment: dpl_5suMm8NyHAxY6GtoDuUNdyp8f6CS (Ready). Production alias tested: https://apex-cleans-austin.vercel.app. DNS work remains deferred; an additional old-domain request became unavailable during the audit and should not be treated as a new-site failure.
+
+Launch checklist: once canonical domain is confirmed serving this deployment, set SITE_INDEXABLE=true for Production and redeploy; keep Preview false. Enter valid RESEND_API_KEY and verified QUOTE_FROM securely, redeploy and repeat the authorized delivery check. Confirm inbox receipt separately from provider acceptance. Search Console/Business Profile changes were not performed without account access.
