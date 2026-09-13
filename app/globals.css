@@ -33,6 +33,8 @@ h1 em{color:#0878b7}
 .proof-strip .google-rating>svg:first-child{color:#d99a00}
 .work-section{background:#edf9ff}
 .owner{background:#eaf7fc}
+.owner.owner-text-only{display:block;min-height:0}.owner-text-only .owner-copy{max-width:780px;margin-inline:auto;padding:76px 65px}
+@media(max-width:760px){.owner-text-only .owner-copy{padding:55px 25px}}
 .process li>span{color:#0875b3}
 .quote-section{background:#123f60;border-top:4px solid #2ab4e4}
 .quote-intro .eyebrow{color:#a6e4ff}
