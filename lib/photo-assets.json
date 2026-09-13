@@ -48,5 +48,25 @@
     "file": "gallery-1-enhanced-v2",
     "width": 1254,
     "height": 1254
+  },
+  "apex-project-1": {
+    "file": "apex-project-1",
+    "width": 3024,
+    "height": 4032
+  },
+  "apex-project-2": {
+    "file": "apex-project-2",
+    "width": 3024,
+    "height": 4032
+  },
+  "apex-project-3": {
+    "file": "apex-project-3",
+    "width": 4284,
+    "height": 5712
+  },
+  "apex-project-4": {
+    "file": "apex-project-4",
+    "width": 5712,
+    "height": 4284
   }
 }
