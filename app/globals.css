@@ -60,8 +60,6 @@ footer{background:#f3faff}
 @keyframes apex-shine{from{transform:translateX(-130%)}to{transform:translateX(130%)}}
 @media(prefers-reduced-motion:no-preference){
   .hero-copy>.eyebrow{animation:apex-rise .6s both}
-  .hero-copy>h1{animation:apex-rise .7s .06s both}
-  .hero-description{animation:apex-rise .7s .13s both}
   .hero-buttons{animation:apex-rise .7s .2s both}
   .photo-label{animation:apex-rise .8s .25s both}
   #mobile-menu{animation:apex-rise .22s both}

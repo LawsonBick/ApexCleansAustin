@@ -65,3 +65,11 @@ Days 61–90: compare qualified inquiries and Search Console nonbranded queries 
 ## Remaining owner inputs
 
 GoDaddy sign-in; secure Resend production API key and verified sender; confirmation of receipt after retest; Search Console and Google Business Profile access; confirmed hours, coverage, service methods and any credentials/guarantees before advertising them. Do not paste secrets into chat.
+
+## Post-change verification
+
+38 HTML pages remain reachable with zero crawl request errors. Old blog URLs return permanent 308 redirects to their replacements; invalid root and service URLs return real 404 responses. Sitemap and robots endpoints return 200. Desktop and mobile service page checked in browser; no horizontal overflow or broken images in the tested mobile view.
+
+First post-change Lighthouse run: performance 73, LCP 5.9s, CLS 0, TBT 20ms; accessibility and best practices remain 100, SEO remains 69 while noindex is intentional. Image-delivery estimated waste fell from 794 KiB to 100 KiB, but this run did NOT establish a speed improvement. Render delay remains a performance concern; initial headline/description entry animations were removed while retaining other motion. Report raw measurements rather than claiming a Core Web Vitals pass.
+
+DNS work explicitly deferred by owner. Do not change DNS during this audit. Email configuration and production indexing remain launch requirements.
