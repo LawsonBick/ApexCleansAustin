@@ -1,0 +1,52 @@
+{
+  "gallery-3": {
+    "file": "gallery-3-enhanced-v2",
+    "width": 1277,
+    "height": 1231
+  },
+  "gallery-4": {
+    "file": "gallery-4-enhanced-v2",
+    "width": 1457,
+    "height": 1080
+  },
+  "gallery-5": {
+    "file": "gallery-5-enhanced-v2",
+    "width": 1441,
+    "height": 1091
+  },
+  "gallery-7": {
+    "file": "gallery-7-enhanced-v2",
+    "width": 1378,
+    "height": 1141
+  },
+  "gallery-9": {
+    "file": "gallery-9-enhanced-v2",
+    "width": 1272,
+    "height": 1236
+  },
+  "gallery-12": {
+    "file": "gallery-12-enhanced-v2",
+    "width": 1428,
+    "height": 1102
+  },
+  "gallery-15": {
+    "file": "gallery-15-enhanced-v2",
+    "width": 1451,
+    "height": 1084
+  },
+  "gallery-20": {
+    "file": "gallery-20-enhanced-v2",
+    "width": 1421,
+    "height": 1107
+  },
+  "patio-after": {
+    "file": "patio-after-enhanced-v2",
+    "width": 1455,
+    "height": 1081
+  },
+  "gallery-1": {
+    "file": "gallery-1-enhanced-v2",
+    "width": 1254,
+    "height": 1254
+  }
+}
