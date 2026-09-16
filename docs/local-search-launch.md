@@ -19,7 +19,7 @@ Manager access became available during this session. The business description, s
 
 ### Saved business description
 
-Apex Window Cleaning is a locally owned business based in Spicewood, serving homes around Lake Travis, Lakeway, Bee Cave, and Austin. We provide interior and exterior window cleaning, pressure washing for patios, driveways, and walkways, and residential solar panel cleaning. Tell us about your property, access, and the surfaces you want cleaned so we can discuss the scope and a personal estimate. Contact Brett at Apex for a free quote.
+Apex Window Cleaning has been in business for 8 years. Based in Spicewood, we serve homes around Lake Travis, Lakeway, Bee Cave, and Austin. We provide interior and exterior window cleaning, pressure washing for patios, driveways, and walkways, and residential solar panel cleaning. Free same-day quotes are available. Contact Brett with your city and a few details about the surfaces you want cleaned for a personal estimate.
 
 ### Service scope used in the profile
 
@@ -38,7 +38,7 @@ Uploaded the existing approved real photo of Brett and his work truck as the new
 - public/images/apex-project-4-1280.webp — fire-pit patio before.
 - public/images/apex-project-3-1280.webp — fire-pit patio after.
 
-The original before-and-after angles differ; do not imply a controlled identical-angle comparison. The project cities and dates are not confirmed, so do not invent location captions. Request a real window-cleaning pair taken from the same position next. Select a genuine job/team photo for the cover. Keep the logo as the logo; do not represent a generated vehicle or storefront as an actual business location.
+The original before-and-after angles differ; do not imply a controlled identical-angle comparison. The project cities and dates are not confirmed, so do not invent location captions. No additional window-cleaning before-and-after photos are currently available, as confirmed by the user. New photos are optional future work, not a launch requirement. Select a genuine job/team photo for the cover. Keep the logo as the logo; do not represent a generated vehicle or storefront as an actual business location.
 
 ### Review process
 
@@ -56,6 +56,7 @@ No customer messages have been sent. The official link was retrieved from the ma
 - Production crawling/indexing enabled; previews and development remain non-indexable.
 - Window cleaning and pressure washing both appear in the homepage headline.
 - Local owner, service scope, and exterior-care information added using existing verified details.
+- User confirmed 8 years in business and same-day quote availability. These details are added to the homepage, About and contact copy, and quote FAQ. No precise opening date or minute-based response guarantee is inferred.
 - Nearby area links added to the homepage; city-page headings identify both main services.
 - Before-and-after photos carry short service descriptions without invented cities or dates.
 - Google rating snapshot updated to 5.0 from five reviews, checked September 15, 2026. This remains a dated manual snapshot, not a live feed.
@@ -90,8 +91,8 @@ Brett should keep a simple lead log with date, source, requested service, qualif
 ## Owner confirmations still needed
 
 1. Confirm hours: the profile currently says 8 AM–8 PM every day. Confirm more distant service coverage. Access is now working.
-2. Current liability insurance, years in business, any written satisfaction policy, and a realistic response target before publishing those claims.
-3. A genuine same-angle window before-and-after pair and its general project city/date, with permission to publish.
+2. Any written satisfaction policy before publishing a guarantee. Experience and same-day quote availability have now been confirmed.
+3. No additional before-and-after photos are available. Existing approved project images remain; do not fabricate new project evidence.
 4. Confirm the test quote arrives at apexwood01@gmail.com. The website can verify provider acceptance, but not mailbox receipt without mailbox access.
 5. Access to the old apexcleansaustin.com host to arrange page-to-page permanent redirects. It still serves an HTTP 200 copy of the old website and appears in branded Google results. The new website’s references are corrected, but migration of the old host is still needed if Apex controls it.
 6. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.

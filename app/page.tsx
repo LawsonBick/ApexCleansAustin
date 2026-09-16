@@ -5,7 +5,7 @@ import {Photo,Services,Work,Process,FAQSection,QuoteSection,Schema} from '@/comp
 import {origin} from '@/lib/site';
 import {googleReviews} from '@/lib/reviews';
 
-const description = 'Window cleaning and pressure washing for homes in Austin, Spicewood, Lakeway, Bee Cave, and Lake Travis. Contact Apex for a free, personal estimate.';
+const description = 'Window cleaning and pressure washing in Austin and Lake Travis. Apex has 8 years in business. Free same-day quotes available. Call (512) 825-1484.';
 export const metadata = {
  title:{absolute:'Window Cleaning & Pressure Washing Austin | Apex Window Cleaning'},
  description, alternates:{canonical:'/'},
@@ -20,7 +20,7 @@ export default function Home(){return <main id="main">
    <h1 className="hero-services-title">Window cleaning &amp; pressure washing <em>for Austin &amp; Lake Travis.</em></h1>
    <p className="hero-description">Clearer glass. Cleaner patios and driveways. Choose the care your home needs, with a free estimate from Apex.</p>
    <div className="hero-buttons"><a className="btn" data-quote="hero" href="/contact">Get a Free Quote <ArrowUpRight size={18}/></a><a className="hero-call" href="tel:+15128251484"><Phone size={17}/><span>Call (512) 825-1484</span></a></div>
-   <p className="hero-note">Interior or exterior windows. One service or several. A quote for your home.</p>
+   <p className="hero-note">8 years in business. Free same-day quotes available.</p>
    <div className="hero-service-links" aria-label="Explore our main services"><a href="/services/window-cleaning">Window cleaning <ArrowUpRight size={15}/></a><a href="/services/pressure-washing">Pressure washing <ArrowUpRight size={15}/></a></div>
   </div>
   <div className="hero-photo"><Photo priority name="hero-gallery-1" alt="Expansive architectural glass reflecting the landscape around a modern home"/><div className="photo-label"><span className="label-line"/><span>Less between you<br/><strong>and the view.</strong></span></div></div>
@@ -29,7 +29,7 @@ export default function Home(){return <main id="main">
  <section className="section wrap why-apex" aria-labelledby="why-apex-title">
   <div className="section-heading"><div><p className="eyebrow">Your home. Your priorities.</p><h2 id="why-apex-title">Local service.<br/>Clear expectations.</h2></div><p>Talk with Apex about what needs cleaning, how to access it, and what your estimate includes.</p></div>
   <div className="why-apex-grid">
-   <div><h3>A local owner</h3><p>Brett’s business is based in Spicewood and serves homes around Lake Travis and Austin.</p><a className="text-link" href="/about">Meet Brett <ArrowUpRight size={16}/></a></div>
+   <div><h3>8 years in business</h3><p>Brett’s business is based in Spicewood and serves homes around Lake Travis and Austin.</p><a className="text-link" href="/about">Meet Brett <ArrowUpRight size={16}/></a></div>
    <div><h3>The scope you need</h3><p>Choose interior windows, exterior windows, or both. Discuss screens, tracks, and hard-water spots with your estimate.</p><a className="text-link" href="/services/window-cleaning">Explore window care <ArrowUpRight size={16}/></a></div>
    <div><h3>Exterior care together</h3><p>Request patio, driveway, or walkway cleaning alongside your windows. Apex assesses the surface and access before confirming the work.</p><a className="text-link" href="/services/pressure-washing">Explore pressure washing <ArrowUpRight size={16}/></a></div>
   </div>

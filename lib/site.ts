@@ -6,6 +6,7 @@ export const services = [
  {slug:'solar-panel-cleaning',name:'Solar panel cleaning',tag:'Care for your investment',description:'Clear away surface buildup with cleaning planned around your panels and access.',image:'gallery-5',alt:'Residential rooftop solar panel array',details:'Share your panel count if you know it, roof type, and any access concerns. Cleaning requirements vary by installation and manufacturer.',scope:['Residential panel cleaning by agreed scope','Roof height, pitch, and access reviewed first','No guaranteed energy increase or electrical repairs']},
 ];
 export const faqs = [
+ ['How quickly can I get a quote?','Free same-day quotes are available. Share your city, the service you need, and a few details about your property, or call (512) 825-1484 to discuss your estimate.'],
  ['What goes into my quote?','The amount of glass, interior or exterior scope, condition, and access all matter. Your city and a short description are enough to start the conversation. Photos may help clarify the scope later.'],
  ['Can I choose interior or exterior cleaning?','Yes—request interior glass, exterior glass, or both. The estimate should identify the areas to be cleaned before you agree to the work.'],
  ['Are screens, tracks, and hard-water spots included?','Do not assume these are included in a glass-cleaning quote. Mention them in your request so Apex can confirm the treatment, suitability, and any additional cost.'],
