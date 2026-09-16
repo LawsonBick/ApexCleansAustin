@@ -2,7 +2,7 @@ import {BeforeAfter} from '@/components/before-after';
 import {Reviews, GoogleRating} from '@/components/reviews';
 import {ArrowUpRight, Phone, MapPin, Check} from 'lucide-react';
 import {Photo,Services,Work,Process,FAQSection,QuoteSection,Schema} from '@/components/site';
-import {origin} from '@/lib/site';
+import {origin,businessHours} from '@/lib/site';
 import {googleReviews} from '@/lib/reviews';
 
 const description = 'Window cleaning and pressure washing in Austin and Lake Travis. Apex has 8 years in business. Free same-day quotes available. Call (512) 825-1484.';
@@ -38,5 +38,5 @@ export default function Home(){return <main id="main">
  <Reviews/><Services/><Work/>
  <section className="section wrap nearby-areas" aria-labelledby="nearby-title"><p className="eyebrow">Close to home</p><h2 id="nearby-title">Window &amp; exterior care<br/>around Lake Travis.</h2><p>Based in Spicewood, serving nearby communities and Austin. Share your city or ZIP code to confirm availability for your property.</p><div className="area-links">{[['Spicewood','spicewood'],['Lakeway','lakeway'],['Bee Cave','bee-cave'],['Austin','austin']].map(([name,slug])=><a key={slug} href={'/service-areas/'+slug}>{name}<ArrowUpRight size={18}/></a>)}</div><a className="text-link" href="/service-areas">See all service areas <ArrowUpRight size={18}/></a></section>
  <Process/><FAQSection/><QuoteSection/>
- <Schema data={{'@context':'https://schema.org','@type':'HomeAndConstructionBusiness','@id':origin+'/#business',name:'Apex Window Cleaning ATX',alternateName:'Apex Window Cleaning',url:origin,telephone:'+15128251484',email:'apexwood01@gmail.com',logo:origin+'/images/apex-window-cleaning-logo.png',sameAs:[googleReviews.url],areaServed:['Spicewood','Lake Travis','Austin','Lakeway','Bee Cave'],hasOfferCatalog:{'@type':'OfferCatalog',name:'Residential cleaning services',itemListElement:[['Window cleaning','window-cleaning'],['Pressure washing','pressure-washing'],['Solar panel cleaning','solar-panel-cleaning']].map(([name,slug])=>({'@type':'Offer',itemOffered:{'@type':'Service',name,url:origin+'/services/'+slug}}))}}}/>
+ <Schema data={{'@context':'https://schema.org','@type':'HomeAndConstructionBusiness','@id':origin+'/#business',name:'Apex Window Cleaning ATX',alternateName:'Apex Window Cleaning',url:origin,telephone:'+15128251484',email:'apexwood01@gmail.com',logo:origin+'/images/apex-window-cleaning-logo.png',sameAs:[googleReviews.url],openingHoursSpecification:businessHours.specification,areaServed:['Spicewood','Lake Travis','Austin','Lakeway','Bee Cave'],hasOfferCatalog:{'@type':'OfferCatalog',name:'Residential cleaning services',itemListElement:[['Window cleaning','window-cleaning'],['Pressure washing','pressure-washing'],['Solar panel cleaning','solar-panel-cleaning']].map(([name,slug])=>({'@type':'Offer',itemOffered:{'@type':'Service',name,url:origin+'/services/'+slug}}))}}}/>
  </main>}

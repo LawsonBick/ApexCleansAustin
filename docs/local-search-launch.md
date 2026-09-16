@@ -4,7 +4,7 @@ Prepared September 15, 2026. Primary website: https://www.apexwindowcleaningatx.
 
 ## Google Business Profile: changes submitted
 
-Manager access became available during this session. The business description, secondary Pressure washing service category, campaign website link, and hidden-address/service-area configuration were saved. Austin, Bee Cave, and Spicewood were added alongside existing Lakeway coverage. Window cleaning and pressure washing service descriptions were saved; solar panel cleaning was added with a description. Service edits can remain pending Google review for up to one day, as shown in its editor. Existing hours were preserved pending Brett’s confirmation.
+Manager access became available during this session. The business description, secondary Pressure washing service category, campaign website link, and hidden-address/service-area configuration were saved. Austin, Bee Cave, and Spicewood were added alongside existing Lakeway coverage. Window cleaning and pressure washing service descriptions were saved; solar panel cleaning was added with a description. Service edits can remain pending Google review for up to one day, as shown in its editor. Existing hours of 8 AM–8 PM every day were confirmed by the user and preserved.
 
 - Existing public listing: https://www.google.com/maps?ftid=0x636aeee7ad2eecaf:0x6e7e9fbadf682982
 - Keep the real-world business name. The current public name is Apex Window Cleaning ATX. Do not add keyword strings to the name.
@@ -12,7 +12,7 @@ Manager access became available during this session. The business description, s
 - Check whether Pressure washing service is available and add it as a secondary category if absent. Keep other categories limited to services Apex actually provides.
 - Because customers do not visit a storefront, turn off “Show business address to customers” under Edit profile → Location. Retain the accurate address privately for Google verification. Do not replace it with an invented office or location.
 - Set genuine service areas. Prioritize Spicewood, Lakeway, Bee Cave, and the Austin/Lake Travis communities actually served. Confirm more distant coverage with Brett.
-- Verify hours with Brett. No guessed opening hours or 24-hour availability.
+- Confirmed hours: 8 AM–8 PM every day (Central). These also appear in the website’s contact sections, footer, and business structured data.
 - Phone: (512) 825-1484.
 - Website URL with attribution: https://www.apexwindowcleaningatx.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp
 - If the profile supports a quote/appointment link, use https://www.apexwindowcleaningatx.com/contact?utm_source=google&utm_medium=organic&utm_campaign=gbp . This requests an estimate; it does not book an appointment.
@@ -71,7 +71,7 @@ No customer messages have been sent. The official link was retrieved from the ma
 - All 38 sitemap URLs independently checked on production: HTTP 200, correct canonical domain, index/follow, one H1.
 - Production build and seven quote tests passed. Responsive layout checked at 320px and 390px with no horizontal overflow.
 - Existing full-page anchor navigation is retained. Focused lint checks passed with that Next.js navigation preference disabled; the existing optimized-logo img warning remains.
-- One labeled live test quote returned provider acceptance. Vercel Analytics displayed both form_start and quote_submission_accepted. No production 5xx entries appeared in the 30-minute post-deploy scan.
+- One labeled live test quote returned provider acceptance. The user subsequently confirmed inbox receipt, completing the email-delivery check for that test. Vercel Analytics displayed both form_start and quote_submission_accepted. No production 5xx entries appeared in the 30-minute post-deploy scan.
 
 ## Measurement
 
@@ -88,13 +88,17 @@ Source labels: google_business_profile, google_search, direct, referral. Google 
 
 Brett should keep a simple lead log with date, source, requested service, qualified/not qualified, estimate amount, booked/not booked, and completed revenue. Review weekly. These offline outcomes cannot be inferred from website clicks.
 
-## Owner confirmations still needed
+## Confirmed by the user
 
-1. Confirm hours: the profile currently says 8 AM–8 PM every day. Confirm more distant service coverage. Access is now working.
-2. Any written satisfaction policy before publishing a guarantee. Experience and same-day quote availability have now been confirmed.
-3. No additional before-and-after photos are available. Existing approved project images remain; do not fabricate new project evidence.
-4. Confirm the test quote arrives at apexwood01@gmail.com. The website can verify provider acceptance, but not mailbox receipt without mailbox access.
-5. Access to the old apexcleansaustin.com host to arrange page-to-page permanent redirects. It still serves an HTTP 200 copy of the old website and appears in branded Google results. The new website’s references are corrected, but migration of the old host is still needed if Apex controls it.
-6. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.
+- The test quote email reached the inbox at apexwood01@gmail.com.
+- Business hours are 8 AM–8 PM every day (Central).
+- Apex has 8 years in business and responds quickly, with same-day quotes available.
+- No additional before-and-after photos are available. Existing approved images remain.
+
+## Remaining follow-ups
+
+1. Access to the old apexcleansaustin.com host to arrange page-to-page permanent redirects. It still serves an HTTP 200 copy of the old website and appears in branded Google results. The new website’s references are corrected, but migration of the old host is still needed if Apex controls it.
+2. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.
+3. Confirm any more distant service coverage or written satisfaction policy before making additional claims.
 
 Google decides when to crawl/index pages and where to rank them. Correct indexing settings make the site eligible; they do not guarantee ranking or lead volume.

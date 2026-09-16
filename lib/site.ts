@@ -1,5 +1,14 @@
 export const origin = 'https://www.apexwindowcleaningatx.com';
 export const business = { name:'Apex Window Cleaning', phone:'(512) 825-1484', email:'apexwood01@gmail.com' };
+export const businessHours = {
+ display: 'Daily, 8 AM–8 PM (Central)',
+ specification: {
+  '@type': 'OpeningHoursSpecification',
+  dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'].map(day => `https://schema.org/${day}`),
+  opens: '08:00',
+  closes: '20:00',
+ },
+};
 export const services = [
  {slug:'window-cleaning',name:'Window cleaning',tag:'A brighter outlook',description:'Let the light in. Interior and exterior window cleaning for a clearer view of the home you love.',image:'gallery-3',alt:'Tall architectural windows reflecting a patio',details:'Choose exterior glass, interior glass, or both. Tell us about window height, access, and any visible spotting so your estimate reflects the work you need.',scope:['Interior and exterior glass quoted to your needs','Screens, tracks, and hard-water treatment discussed separately','High or difficult-to-reach windows assessed before scheduling']},
  {slug:'pressure-washing',name:'Pressure washing',tag:'Fresh from the outside in',description:'Pressure washing for driveways, patios, and walkways in Austin, Lake Travis, and Spicewood. Request a quote for your outdoor surfaces.',image:'patio-after',alt:'Stone patio beside a landscaped garden',details:'Looking for power washing in Austin? Tell us which driveways, patios, or walkways need attention. Surface material, condition, size, and access determine the cleaning approach and estimate. Mention delicate stone, existing damage, and stubborn marks so Apex can assess what is suitable before work begins.',scope:['Driveways, patios, and walkways','Surface suitability reviewed before work is agreed','Delicate stone, siding, and painted surfaces need individual assessment']},
