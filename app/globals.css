@@ -87,8 +87,3 @@ footer{background:#f3faff}
 .hero h1.hero-services-title{font-size:clamp(38px,4.1vw,61px);line-height:1.08;max-width:640px}.hero-services-title em{display:block;margin-top:.12em}.hero-service-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:23px}.hero-service-links a{display:flex;align-items:center;gap:8px;font-size:13px;text-decoration:underline;text-underline-offset:4px}.why-apex-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}.why-apex-grid h3{font-size:24px;margin-bottom:16px}.why-apex-grid p{font-size:15px}.nearby-areas>p:not(.eyebrow){max-width:670px;margin:24px 0}.nearby-areas>.text-link{margin-top:25px}.comparison-project-detail{font-size:14px;margin:0 0 12px}.header-actions{flex-shrink:0}
 @media(max-width:1100px){.header{padding-inline:30px}.hero h1.hero-services-title{font-size:clamp(38px,4.8vw,53px)}}
 @media(max-width:760px){.hero h1.hero-services-title{font-size:clamp(37px,8.5vw,56px)}.hero-service-links{gap:14px 20px}.why-apex-grid{grid-template-columns:1fr;gap:26px}.why-apex-grid>div+div{border-top:1px solid var(--line);padding-top:26px}.nearby-areas h2{font-size:39px}.header{padding-inline:22px}}
-
-/* Preserve the original truck photo framing beside the homepage introduction. */
-.hero-photo.hero-truck{min-height:0;height:auto;display:flex;align-items:center;background:#f1faff}
-.hero-truck picture{position:static;inset:auto;width:100%;height:auto}
-.hero-truck img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center}

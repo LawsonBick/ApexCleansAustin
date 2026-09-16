@@ -31,9 +31,7 @@ Do not enter unverified prices, insurance claims, guarantees, or promised respon
 
 ### Authentic photo set
 
-Uploaded the existing approved real photo of Brett and his work truck, plus the four real chimney/patio photographs. On September 15, 2026, the user supplied IMG_0094.heic and requested it as the homepage, website share image, and Google cover. Optimized copies preserve the original truck photo framing. The Google cover thumbnail was verified with the new truck photo and a PENDING review status. Google ultimately chooses what it displays publicly; selecting a cover cannot guarantee every shared Google preview. Existing approved photos in the repository include:
-- public/images/apex-work-truck-share-0094.jpg — the supplied work truck photo, used for Google cover upload and website Open Graph/Twitter previews (1600×1200 JPEG).
-- public/images/apex-work-truck-0094-{640,960,1280}.{avif,webp} — optimized responsive homepage versions.
+Uploaded the existing approved real photo of Brett and his work truck as the new cover, plus the four real chimney/patio photographs. Google showed Upload complete; new images were pending review. Google ultimately chooses what it displays publicly. Existing approved originals in the repository include:
 - public/images/brett-with-dog-1280.webp — Brett beside his actual work truck.
 - public/images/apex-project-2-1280.webp — chimney before.
 - public/images/apex-project-1-1280.webp — chimney after.
@@ -64,7 +62,6 @@ No customer messages have been sent. The official link was retrieved from the ma
 - Google rating snapshot updated to 5.0 from five reviews, checked September 15, 2026. This remains a dated manual snapshot, not a live feed.
 - Actual Vercel custom analytics events connected; privacy copy updated.
 - General lead-source label included in quote emails, with no contact details sent to analytics.
-- Homepage hero and all page-sharing metadata use the user-supplied truck photo. The full 4:3 framing is preserved; the build and 390px responsive layout check passed with no horizontal overflow. Messaging apps may retain older cached link previews until refreshed.
 
 ## Search Console and verification
 
@@ -100,9 +97,8 @@ Brett should keep a simple lead log with date, source, requested service, qualif
 
 ## Remaining follow-ups
 
-1. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.
-2. Confirm any more distant service coverage or written satisfaction policy before making additional claims.
-
-The user explicitly chose to keep apexwindowcleaningatx.com and ignore the old website. Access to or migration of the old host is no longer a requested follow-up.
+1. Access to the old apexcleansaustin.com host to arrange page-to-page permanent redirects. It still serves an HTTP 200 copy of the old website and appears in branded Google results. The new website’s references are corrected, but migration of the old host is still needed if Apex controls it.
+2. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.
+3. Confirm any more distant service coverage or written satisfaction policy before making additional claims.
 
 Google decides when to crawl/index pages and where to rank them. Correct indexing settings make the site eligible; they do not guarantee ranking or lead volume.
