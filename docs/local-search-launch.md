@@ -2,9 +2,9 @@
 
 Prepared September 15, 2026. Primary website: https://www.apexwindowcleaningatx.com/
 
-## Google Business Profile: ready to apply when owner access is available
+## Google Business Profile: changes submitted
 
-The signed-in account lawbick@gmail.com does not currently list Apex among its managed businesses. Brett can invite that account as a Manager through Business Profile settings → People and access, or sign in to the account already managing Apex. Do not create a duplicate listing.
+Manager access became available during this session. The business description, secondary Pressure washing service category, campaign website link, and hidden-address/service-area configuration were saved. Austin, Bee Cave, and Spicewood were added alongside existing Lakeway coverage. Window cleaning and pressure washing service descriptions were saved; solar panel cleaning was added with a description. Service edits can remain pending Google review for up to one day, as shown in its editor. Existing hours were preserved pending Brett’s confirmation.
 
 - Existing public listing: https://www.google.com/maps?ftid=0x636aeee7ad2eecaf:0x6e7e9fbadf682982
 - Keep the real-world business name. The current public name is Apex Window Cleaning ATX. Do not add keyword strings to the name.
@@ -17,11 +17,11 @@ The signed-in account lawbick@gmail.com does not currently list Apex among its m
 - Website URL with attribution: https://www.apexwindowcleaningatx.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp
 - If the profile supports a quote/appointment link, use https://www.apexwindowcleaningatx.com/contact?utm_source=google&utm_medium=organic&utm_campaign=gbp . This requests an estimate; it does not book an appointment.
 
-### Business description
+### Saved business description
 
 Apex Window Cleaning is a locally owned business based in Spicewood, serving homes around Lake Travis, Lakeway, Bee Cave, and Austin. We provide interior and exterior window cleaning, pressure washing for patios, driveways, and walkways, and residential solar panel cleaning. Tell us about your property, access, and the surfaces you want cleaned so we can discuss the scope and a personal estimate. Contact Brett at Apex for a free quote.
 
-### Services to check or add
+### Service scope used in the profile
 
 - **Interior and exterior window cleaning:** Choose interior glass, exterior glass, or both. Screens, tracks, hard-water spots, window height, and access are reviewed with your estimate.
 - **Patio and driveway pressure washing:** Cleaning for patios, driveways, and walkways, with surface condition, material, access, and suitability assessed before work is confirmed.
@@ -31,7 +31,7 @@ Do not enter unverified prices, insurance claims, guarantees, or promised respon
 
 ### Authentic photo set
 
-Use real business and job photographs with permission. Existing approved originals in the repository include:
+Uploaded the existing approved real photo of Brett and his work truck as the new cover, plus the four real chimney/patio photographs. Google showed Upload complete; new images were pending review. Google ultimately chooses what it displays publicly. Existing approved originals in the repository include:
 - public/images/brett-with-dog-1280.webp — Brett beside his actual work truck.
 - public/images/apex-project-2-1280.webp — chimney before.
 - public/images/apex-project-1-1280.webp — chimney after.
@@ -46,9 +46,9 @@ After each completed job, ask all customers for an honest review. Do not offer i
 
 Suggested text for Brett to send after service:
 
-“Thank you for choosing Apex for your cleaning project. If you have a moment, would you share an honest Google review of your experience? Your feedback helps our small business and other local homeowners. [Insert the review link from your profile’s Ask for reviews button.] Thank you, Brett.”
+“Thank you for choosing Apex for your cleaning project. If you have a moment, would you share an honest Google review of your experience? Your feedback helps our small business and other local homeowners. https://g.page/r/CYIpaN-6n35uEBM/review Thank you, Brett.”
 
-No customer messages have been sent. Get the direct review link from the managed profile rather than guessing a Place ID. Respond personally to each new review without exposing customer information.
+No customer messages have been sent. The official link was retrieved from the managed profile’s Ask for reviews tool: https://g.page/r/CYIpaN-6n35uEBM/review . It is also linked from the website’s reviews page. Respond personally to each new review without exposing customer information.
 
 ## Website improvements
 
@@ -61,6 +61,16 @@ No customer messages have been sent. Get the direct review link from the managed
 - Google rating snapshot updated to 5.0 from five reviews, checked September 15, 2026. This remains a dated manual snapshot, not a live feed.
 - Actual Vercel custom analytics events connected; privacy copy updated.
 - General lead-source label included in quote emails, with no contact details sent to analytics.
+
+## Search Console and verification
+
+- URL-prefix property https://www.apexwindowcleaningatx.com/ verified with the deployed HTML meta tag under lawbick@gmail.com. Keep the tag in the root layout.
+- Corrected sitemap submitted successfully. The report initially showed Couldn’t fetch / Sitemap could not be read. Google’s own live URL inspection then confirmed Crawl allowed: Yes; Page fetch: Successful; Indexing allowed: Yes for the sitemap at 7:45 PM Central. Sitemap report processing remains outstanding; do not claim all pages are indexed.
+- Homepage indexing requested successfully; Google added it to the priority crawl queue. Its older indexed snapshot still reflected the previous robots block.
+- All 38 sitemap URLs independently checked on production: HTTP 200, correct canonical domain, index/follow, one H1.
+- Production build and seven quote tests passed. Responsive layout checked at 320px and 390px with no horizontal overflow.
+- Existing full-page anchor navigation is retained. Focused lint checks passed with that Next.js navigation preference disabled; the existing optimized-logo img warning remains.
+- One labeled live test quote returned provider acceptance. Vercel Analytics displayed both form_start and quote_submission_accepted. No production 5xx entries appeared in the 30-minute post-deploy scan.
 
 ## Measurement
 
@@ -79,10 +89,11 @@ Brett should keep a simple lead log with date, source, requested service, qualif
 
 ## Owner confirmations still needed
 
-1. Google Business Profile access and accurate hours/service coverage.
+1. Confirm hours: the profile currently says 8 AM–8 PM every day. Confirm more distant service coverage. Access is now working.
 2. Current liability insurance, years in business, any written satisfaction policy, and a realistic response target before publishing those claims.
 3. A genuine same-angle window before-and-after pair and its general project city/date, with permission to publish.
 4. Confirm the test quote arrives at apexwood01@gmail.com. The website can verify provider acceptance, but not mailbox receipt without mailbox access.
-5. Access to the old apexcleansaustin.com host, if Apex still controls it, to arrange page-to-page permanent redirects. The new website's references are corrected independently of that old host.
+5. Access to the old apexcleansaustin.com host to arrange page-to-page permanent redirects. It still serves an HTTP 200 copy of the old website and appears in branded Google results. The new website’s references are corrected, but migration of the old host is still needed if Apex controls it.
+6. Recheck Search Console’s sitemap report after Google refreshes it. The live fetch succeeds, but the sitemap report has not yet confirmed processing.
 
 Google decides when to crawl/index pages and where to rank them. Correct indexing settings make the site eligible; they do not guarantee ranking or lead volume.

@@ -38,6 +38,7 @@ export function Reviews({ full = false }: { full?: boolean }) {
           </figure>
         ))}
       </div>
+      {full && <p className="review-invite">Has Apex cleaned your home? <a className="text-link" href={googleReviews.writeReviewUrl} target="_blank" rel="noopener noreferrer">Share your honest experience on Google <ArrowUpRight size={16} aria-hidden="true" /></a></p>}
       <div className="reviews-bottom">
         <p>Short excerpts from Google reviews. Individual experiences may vary.</p>
         <a className="text-link" href={full ? googleReviews.url : '/reviews'}

@@ -2,6 +2,7 @@
 // Keep this snapshot dated; no API or live review feed is connected.
 export const googleReviews = {
   rating: '5.0',
+  writeReviewUrl: 'https://g.page/r/CYIpaN-6n35uEBM/review',
   count: 5,
   checkedAt: '2026-09-15',
   checkedLabel: 'September 15, 2026',
