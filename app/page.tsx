@@ -2,15 +2,15 @@ import {BeforeAfter} from '@/components/before-after';
 import {Reviews, GoogleRating} from '@/components/reviews';
 import {ArrowUpRight, Phone, MapPin, Check} from 'lucide-react';
 import {Photo,Services,Work,Process,FAQSection,QuoteSection,Schema} from '@/components/site';
-import {origin,businessHours} from '@/lib/site';
+import {origin,businessHours,sharePhoto} from '@/lib/site';
 import {googleReviews} from '@/lib/reviews';
 
 const description = 'Window cleaning and pressure washing in Austin and Lake Travis. Apex has 8 years in business. Free same-day quotes available. Call (512) 825-1484.';
 export const metadata = {
  title:{absolute:'Window Cleaning & Pressure Washing Austin | Apex Window Cleaning'},
  description, alternates:{canonical:'/'},
- openGraph:{title:'Window Cleaning & Pressure Washing | Apex',description,url:origin,type:'website',images:[{url:origin+'/images/hero-gallery-1-1280.webp',alt:'Architectural glass in the Apex project gallery'}]},
- twitter:{card:'summary_large_image',title:'Window Cleaning & Pressure Washing | Apex',description,images:[origin+'/images/hero-gallery-1-1280.webp']},
+ openGraph:{title:'Window Cleaning & Pressure Washing | Apex',description,url:origin,type:'website',images:[sharePhoto]},
+ twitter:{card:'summary_large_image',title:'Window Cleaning & Pressure Washing | Apex',description,images:[sharePhoto]},
 };
 
 export default function Home(){return <main id="main">

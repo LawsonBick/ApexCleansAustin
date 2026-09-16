@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
-import {origin} from '@/lib/site';
+import {origin,sharePhoto} from '@/lib/site';
 import {siteIndexable} from '@/lib/indexing';
 import { SiteMotion } from '@/components/site-motion';
 import { Header, Tracking } from '@/components/site-client';
 import { Footer } from '@/components/site';
 export const metadata: Metadata = {
  metadataBase:new URL(origin),
+ openGraph:{images:[sharePhoto]},
+ twitter:{card:'summary_large_image',images:[sharePhoto]},
  title:{default:'Window Cleaning in Austin & Lake Travis | Apex Window Cleaning',template:'%s | Apex Window Cleaning'},
  description:'Window cleaning, pressure washing, and solar panel cleaning from Spicewood across Austin and Lake Travis. Request a free quote from Apex Window Cleaning.',
  robots:siteIndexable()?{index:true,follow:true}:{index:false,follow:false},

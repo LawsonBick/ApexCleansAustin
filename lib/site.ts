@@ -1,4 +1,5 @@
 export const origin = 'https://www.apexwindowcleaningatx.com';
+export const sharePhoto = {url:origin+'/images/apex-work-truck-share-0094.jpg',width:1600,height:1200,type:'image/jpeg',alt:'Apex’s white exterior-cleaning work truck with window-cleaning and solar-panel signage'};
 export const business = { name:'Apex Window Cleaning', phone:'(512) 825-1484', email:'apexwood01@gmail.com' };
 export const businessHours = {
  display: 'Daily, 8 AM–8 PM (Central)',
