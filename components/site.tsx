@@ -6,7 +6,7 @@ import {QuoteForm} from './quote-form';
 export function Photo({name,alt,className='',priority=false}:{name:string;alt:string;className?:string;priority?:boolean}){
  const asset=(photoAssets as Record<string,{file:string;width:number;height:number}>)[name];
  const file=asset?.file||name;
- const sizes=name==='hero-gallery-1'?'(max-width: 760px) 100vw, 51vw':'(max-width: 760px) calc(100vw - 48px), (max-width: 1100px) 50vw, 45vw';
+ const sizes=(name==='hero-gallery-1'||name==='apex-work-truck-0094')?'(max-width: 760px) 100vw, 51vw':'(max-width: 760px) calc(100vw - 48px), (max-width: 1100px) 50vw, 45vw';
  const widths=asset||name==='hero-gallery-1'?[640,960,1280]:[640,1280];
  return <picture className={className}><source type="image/avif" srcSet={widths.map(w=>`/images/${file}-${w}.avif ${w}w`).join(', ')} sizes={sizes}/><img src={`/images/${file}-1280.webp`} srcSet={widths.map(w=>`/images/${file}-${w}.webp ${w}w`).join(', ')} sizes={sizes} alt={alt} width={asset?.width||1280} height={asset?.height||960} loading={priority?'eager':'lazy'} fetchPriority={priority?'high':'auto'}/></picture>
 }
