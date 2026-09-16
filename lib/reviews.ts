@@ -1,10 +1,10 @@
-// Manually checked against the user-supplied Google listing on September 11, 2026.
+// Manually checked against the user-supplied Google listing on September 15, 2026.
 // Keep this snapshot dated; no API or live review feed is connected.
 export const googleReviews = {
   rating: '5.0',
-  count: 4,
-  checkedAt: '2026-09-11',
-  checkedLabel: 'September 11, 2026',
+  count: 5,
+  checkedAt: '2026-09-15',
+  checkedLabel: 'September 15, 2026',
   url: 'https://www.google.com/maps/place/Apex+Window+Cleaning/data=!4m2!3m1!1s0x0:0x6e7e9fbadf682982',
 };
 

@@ -1,4 +1,4 @@
-export const origin = 'https://apexcleansaustin.com';
+export const origin = 'https://www.apexwindowcleaningatx.com';
 export const business = { name:'Apex Window Cleaning', phone:'(512) 825-1484', email:'apexwood01@gmail.com' };
 export const services = [
  {slug:'window-cleaning',name:'Window cleaning',tag:'A brighter outlook',description:'Let the light in. Interior and exterior window cleaning for a clearer view of the home you love.',image:'gallery-3',alt:'Tall architectural windows reflecting a patio',details:'Choose exterior glass, interior glass, or both. Tell us about window height, access, and any visible spotting so your estimate reflects the work you need.',scope:['Interior and exterior glass quoted to your needs','Screens, tracks, and hard-water treatment discussed separately','High or difficult-to-reach windows assessed before scheduling']},
